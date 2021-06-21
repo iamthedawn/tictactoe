@@ -1,8 +1,6 @@
-body{
-    background-image: url("bg.png");
-    
+body {
+  background-image: url("bg.png");
 }
-
 
 #gameover {
   font-family: "Press Start 2P", cursive;
@@ -41,55 +39,58 @@ h1 {
   font-size: 2rem;
 }
 
-footer{
-    
-    left: 0;
+footer {
+  left: 0;
   bottom: 0;
   width: 100%;
-  font-weight:bold;
+  font-weight: bold;
   color: black;
   text-align: center;
 }
 
-@media (max-width: 998px){
-    .a1 {
-        font-family: "Press Start 2P", cursive;
-        text-align: center;
-        background-color: black;
-        color: white;
-        width: 9rem;
-        height: 9rem;
-        display: flex;
-        justify-content: center;
-        margin: 2px;
-        font-size: 4rem;
-      }
-      h1 {
-        font-family: "Press Start 2P", cursive;
-       
-       
-        text-align: center;
-        
-        padding: 2rem;
-        
-      }
-      .h {
-          margin-top:50px;
-      }
+@media (max-width: 998px) {
+  .a1 {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    font-size: 4rem;
+  }
+  h1 {
+    font-family: "Press Start 2P", cursive;text-align: center;
+    padding: 2rem;
+  }
+  .h {
+    margin-top: 50px;
+  }
 
-      .reset {
-        font-family: "Press Start 2P", cursive;
-        text-align: center;
-        color: white;
-        margin: 10px auto 20px auto;
-        font-size: 2rem;
-      }
+  .reset {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    color: white;
+    margin: 10px auto 20px auto;
+    font-size: 2rem;
+  }
 
-      #gameover {
-          margin-top:10px;
-        font-family: "Press Start 2P", cursive;
-        text-align: center;
-        padding: 1rem;
-      }
-      
+  #gameover {
+    margin-top: 10px;
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }

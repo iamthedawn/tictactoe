@@ -6,7 +6,7 @@ element.forEach(function (el) {
 
             function myFunction(x) {
                 if (x.matches) { // If media query matches
-                    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:3rem;'>O's TURN</p>";
+                    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:4rem;'>O's TURN</p>";
                 } else {
                     document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>O's TURN</p>";
                 }
@@ -37,7 +37,7 @@ element.forEach(function (el) {
             if (el.textContent == "_") {
                 function myFunction(x) {
                     if (x.matches) { // If media query matches
-                        document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:3rem;'>X's TURN</p>";
+                        document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:4rem;'>X's TURN</p>";
                     } else {
                         document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>X's TURN</p>";
                     }

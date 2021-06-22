@@ -4,7 +4,10 @@ element.forEach(function (el) {
     el.addEventListener('click', function () {
         if (i === 0 && el.textContent == "_") {
             document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>O's TURN</p>";
+            var audio = new Audio("sounds/tapsound.mpeg");
+            audio.play();
             el.innerHTML = "X";
+            
             i++;
             j = document.getElementById("c11").textContent;
             k = document.getElementById("c12").textContent;
@@ -22,6 +25,8 @@ element.forEach(function (el) {
         else {
             if (el.textContent == "_") {
                 document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>X's TURN</p>";
+                var audio = new Audio("sounds/tapsound.mpeg");
+                audio.play();
                 el.innerHTML = "O";
                 i = 0;
                 j = document.getElementById("c11").textContent;

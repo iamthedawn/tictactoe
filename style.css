@@ -5,7 +5,12 @@ body {
 #gameover {
   font-family: "Press Start 2P", cursive;
   text-align: center;
-  padding: 1rem;
+  
+}
+#turn {
+  font-size:2rem;
+  margin-top:1rem;
+  
 }
 h1 {
   font-family: "Press Start 2P", cursive;
@@ -35,7 +40,7 @@ h1 {
   font-family: "Press Start 2P", cursive;
   text-align: center;
   color: white;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 0px auto;
   font-size: 2rem;
 }
 

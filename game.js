@@ -3,6 +3,7 @@ const element = document.querySelectorAll(".a1")
 element.forEach(function (el) {
     el.addEventListener('click', function () {
         if (i === 0 && el.textContent == "_") {
+            document.getElementById("turn").textContent="O's TURN";
             el.innerHTML = "X";
             i++;
             j = document.getElementById("c11").textContent;
@@ -20,6 +21,7 @@ element.forEach(function (el) {
 
         else {
             if (el.textContent == "_") {
+                document.getElementById("turn").textContent="X's TURN";
                 el.innerHTML = "O";
                 i = 0;
                 j = document.getElementById("c11").textContent;
@@ -155,7 +157,7 @@ function setdisable(){
     
 }
 function gameover(){
-    document.getElementById("gameover").innerHTML="<p>GAME OVER click RESET to play a New GAME!</p>";
-    var audio = new Audio("sounds/gameover.mpeg");
+    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem;'>GAME OVER click RESET to play a New GAME!</p>";
+    var audio = new Audio("sounds/gameover.mp3");
     audio.play();
 }

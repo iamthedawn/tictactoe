@@ -157,7 +157,7 @@ function setdisable(){
     
 }
 function gameover(){
-    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem;'>GAME OVER click RESET to play a New GAME!</p>";
+    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff;'>GAME OVER click RESET to play a New GAME!</p>";
     var audio = new Audio("sounds/gameover.mp3");
     audio.play();
 }

@@ -3,7 +3,18 @@ const element = document.querySelectorAll(".a1")
 element.forEach(function (el) {
     el.addEventListener('click', function () {
         if (i === 0 && el.textContent == "_") {
-            document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>O's TURN</p>";
+
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:3rem;'>O's TURN</p>";
+                } else {
+                    document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>O's TURN</p>";
+                }
+              }
+              
+              var x = window.matchMedia("(max-width: 998px)")
+              myFunction(x)
+            
             var audio = new Audio("sounds/tapsound.mpeg");
             audio.play();
             el.innerHTML = "X";
@@ -24,7 +35,17 @@ element.forEach(function (el) {
 
         else {
             if (el.textContent == "_") {
-                document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>X's TURN</p>";
+                function myFunction(x) {
+                    if (x.matches) { // If media query matches
+                        document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:3rem;'>X's TURN</p>";
+                    } else {
+                        document.getElementById("gameover").innerHTML="<p style='margin-top:1rem; background-color: #fff; font-size:2rem;'>X's TURN</p>";
+                    }
+                  }
+                  
+                  var x = window.matchMedia("(max-width: 998px)")
+                  myFunction(x)
+                
                 var audio = new Audio("sounds/tapsound.mpeg");
                 audio.play();
                 el.innerHTML = "O";
